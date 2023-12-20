@@ -17,5 +17,5 @@ aws budgets createl-budget \
 
 ## Create Alarm
 ```
-aws cloudwatch put-metiric-alarm --cli-input-json file://aws/json/alarm_config.json
+aws cloudwatch put-metiric-alarm --cli-input-json file://aws/json/alarm-config.json
 ```
