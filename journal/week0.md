@@ -14,3 +14,8 @@ aws budgets createl-budget \
     --budget=file://aws/json/budget.json \
     --notifications-with-subscribers-file://aws/json/budget-notifications-with-subscribers.json
 ```
+
+## Create Alarm
+```
+aws cloudwatch put-metiric-alarm --cli-input-json file://aws/json/alarm_config.json
+```
