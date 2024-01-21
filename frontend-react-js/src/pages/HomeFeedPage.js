@@ -18,9 +18,13 @@ export default function HomeFeedPage() {
   const [user, setUser] = React.useState(null);
   const dataFetchedRef = React.useRef(false);
 
+  console.log(window.location.origin);
+
+
   const loadData = async () => {
     try {
       const backend_url = `${process.env.REACT_APP_BACKEND_URL}/api/activities/home`
+      console.log(backend_url)
       const res = await fetch(backend_url, {
         method: "GET"
       });
